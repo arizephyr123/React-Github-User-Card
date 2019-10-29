@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import UserCard from './UserCard';
+import PrimaryCard from './PrimaryCard';
 import Followers from './Followers';
 
 class PrimaryUser extends React.Component{
@@ -29,7 +29,7 @@ class PrimaryUser extends React.Component{
         return(
             <>
             <div>
-                <UserCard primaryData={this.state.primaryData}/>
+                <PrimaryCard primaryData={this.state.primaryData}/>
             </div>
             <div>
                 <Followers primaryData={this.state.primaryData}/>

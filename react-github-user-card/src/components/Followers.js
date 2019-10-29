@@ -1,5 +1,5 @@
 import React from 'react';
-import UserCard from './UserCard';
+import FollowerCard from './FollowerCards';
 
 class Followers extends React.Component{
     constructor(){
@@ -10,7 +10,7 @@ class Followers extends React.Component{
     }
 
     render(){
-        return <UserCard/>
+        return <FollowerCard/>
     }
 };
 
