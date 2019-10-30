@@ -1,17 +1,22 @@
-import React from 'react';
-import FollowerCard from './FollowerCards';
+import React from "react";
+import FollowerCard from "./FollowerCards";
+import axios from "axios";
 
-class Followers extends React.Component{
-    constructor(){
-        super();
-        this.state = {
-            followersData: []
-        }
-    }
+class Followers extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      followersData: []
+    };
+  }
 
-    render(){
-        return <FollowerCard/>
-    }
-};
+  componentDidMount() {
+    axios.get("");
+  }
+
+  render() {
+    return <FollowerCard followersData={this.state.followersData}/>;
+  }
+}
 
 export default Followers;
