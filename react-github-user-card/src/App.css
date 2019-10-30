@@ -17,11 +17,12 @@
   justify-content: center;
 }
 
-.primary-card {
+.primary-card, follower{
   background-color: azure;
   border-radius: 15px;
   margin: 10px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .primary-img {
@@ -32,4 +33,24 @@
 
 .hide-bio {
   display: none;
+}
+
+.followers-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.follower {
+  border-radius: 15px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 33%;
+}
+
+.CardTitle {
+  background-color: blueviolet;
 }

@@ -46,10 +46,20 @@ class PrimaryUser extends React.Component {
               //console.log(this.state.followerData);
             })
             .catch(err => console.log(err));
+            return this.state
         });
       })
       .catch(err => console.log(err));
-  }
+  };
+
+
+  changePrimary = selectedUser => {
+    this.setState({
+      primaryUser: selectedUser
+    });
+    console.log(this.state);
+    return this.state;
+  };
 
   render() {
     return (
@@ -58,7 +68,10 @@ class PrimaryUser extends React.Component {
           <PrimaryCard primaryData={this.state.primaryData} />
         </div>
         <div>
-          <FollowerCard followerData={this.state.followerData} />
+          <FollowerCard
+            followerData={this.state.followerData}
+            changePrimary={this.changePrimary}
+          />
         </div>
       </>
     );
